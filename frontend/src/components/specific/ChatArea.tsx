@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChatMessage, Role, Theme } from '../types';
+import { ChatMessage, Role, Theme } from '../../types';
 import { Send, Loader2, User, Bot, AlertCircle } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 

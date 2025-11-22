@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { UploadedFile, User, Theme } from '../types';
-import { formatFileSize, processFiles } from '../services/fileUtils';
+import { formatFileSize, processFiles } from '../utils/fileUtils';
 import { Trash2, FileText, Image as ImageIcon, File as FileIcon, UploadCloud, X, Lock } from 'lucide-react';
 
 interface FileSidebarProps {

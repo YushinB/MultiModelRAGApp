@@ -1,9 +1,9 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { ChatMessage, Role, UploadedFile, User, AppSettings } from './types';
-import FileSidebar from './components/FileSidebar';
-import ChatArea from './components/ChatArea';
-import LoginScreen from './components/LoginScreen';
-import AdminDashboard from './components/AdminDashboard';
+import FileSidebar from './layouts/FileSidebar';
+import ChatArea from './components/specific/ChatArea';
+import LoginScreen from './pages/LoginScreen';
+import AdminDashboard from './pages/AdminDashboard';
 import { generateResponse } from './services/geminiService';
 import { LogOut, Shield } from 'lucide-react';
 
