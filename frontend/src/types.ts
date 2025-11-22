@@ -36,12 +36,15 @@ export interface ChatMessage {
   isError?: boolean;
 }
 
+export type RAGStatus = 'indexed' | 'pending' | 'failed';
+
 export interface UploadedFile {
   id: string;
   name: string;
   mimeType: string;
   data: string; // Base64 encoded string
   size: number;
+  status?: RAGStatus; // Added status
 }
 
 export interface ChatState {

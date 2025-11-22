@@ -31,7 +31,8 @@ export const processFiles = async (files: FileList | null): Promise<UploadedFile
         name: file.name,
         mimeType: file.type,
         data: base64Data,
-        size: file.size
+        size: file.size,
+        status: 'pending'
       });
     } catch (error) {
       console.error(`Error processing file ${file.name}:`, error);

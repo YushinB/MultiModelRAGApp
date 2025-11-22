@@ -126,6 +126,8 @@ const App: React.FC = () => {
           settings={settings} 
           onUpdateSettings={setSettings} 
           onClose={() => setView('chat')} 
+          files={files}
+          onUpdateFiles={setFiles}
         />
       </div>
     );
