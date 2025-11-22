@@ -1,0 +1,5 @@
+{
+  "name": "YushinB RAG Workspace",
+  "description": "A multi-modal document analysis and chat application using Gemini 2.5 Flash. Upload PDFs, images, or text files and chat with your custom knowledge base.",
+  "requestFramePermissions": []
+}
