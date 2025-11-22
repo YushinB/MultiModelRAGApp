@@ -1,20 +1,56 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Lumina RAG Workspace
 
-# Run and deploy your AI Studio app
+## Description
+Lumina RAG Workspace is a secure, interactive Retrieval-Augmented Generation (RAG) application designed to help users extract insights from their documents. Built with React, TypeScript, and Google's Gemini AI, it allows users to upload various file formats (PDF, Text, Images) and engage in natural language conversations with their content.
 
-This contains everything you need to run your app locally.
+## Installation
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+### Frontend Setup
+The frontend is built with React and Vite.
 
-## Run Locally
+1.  **Navigate to the frontend directory**:
+    ```bash
+    cd frontend
+    ```
 
-**Prerequisites:**  Node.js
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
+3.  **Environment Configuration**:
+    Create a `.env` or `.env.local` file in the `frontend` directory with your API keys:
+    ```env
+    GEMINI_API_KEY=your_google_gemini_api_key
+    PORT=3000 # Optional, defaults to 3000
+    ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Usage
+
+### Running the Frontend
+You can start the frontend application using the provided PowerShell script or standard npm commands.
+
+**Option 1: Using the Deployment Script (Windows)**
+Run the automated script from the root directory to install dependencies and start the server on the configured port.
+```powershell
+.\deploy-frontend.ps1
+```
+
+**Option 2: Manual Start**
+1.  Navigate to the frontend folder:
+    ```bash
+    cd frontend
+    ```
+2.  Start the development server:
+    ```bash
+    npm run dev
+    ```
+
+### Accessing the Application
+Once the server is running, open your web browser and navigate to:
+http://localhost:3000 (or the port you specified)
+
+### Login Credentials (Demo)
+- **Admin**: `admin`
+- **Manager**: `manager_jane`
+- **Viewer**: `viewer_bob`
